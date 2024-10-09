@@ -12,7 +12,7 @@ body {
     --tamanho-header: 80px;
     --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
+    --tamanho-footer: 120px;
 }
 
 /* Header:*/
@@ -36,7 +36,7 @@ body {
 
 .header a {
     text-decoration: none;
-    color: #e3b062;
+    color: #ffffff;
 }
 
 .agora {
@@ -65,12 +65,14 @@ body {
     color: white;
     background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
     background-size: cover;
+    height: 200px;
 }
 
 .banner .container {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .banner .container p {
@@ -93,17 +95,31 @@ body {
     align-items: center;
 }
 
+.social .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .social .container .boxes {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    width: 60%;
     padding: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
+    text-align: center;
+}
+
+.box .imgTitle {
+    display: flex;
+    flex-direction: column;
 }
 
 .box img {
